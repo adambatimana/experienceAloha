@@ -1,0 +1,191 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="utf-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <title>Booking</title>
+               <!--[if lt IE 9]>
+              <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+              <![endif]-->
+              <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+              <link href="../css/style.css" rel="stylesheet" type="text/css" />
+              <link href="../css/fontello.css" rel="stylesheet" type="text/css" />
+              <script src="../js/jquery-1.12.1.min.js"></script>
+              <script src="../js/toggle.js"></script>
+              <script src="../js/toTop.js"></script>
+              <link href='https://fonts.googleapis.com/css?family=Raleway:400,700/Headland+One/Quicksand/Righteous' rel='stylesheet' type='text/css'>
+
+          </head>
+          <body id="dbook">
+            <div id="container">
+                <header class="cf">
+                    <a href="../index.html" accesskey="2" class="logo"><img src="../images/ealogo.png" alt="image"></a>
+                    <section class="ut">
+                        <a href="book.html" class="book">BOOK NOW</a> 
+                        <h4>Call Us At <a href="tel:18086715093" class="phone">1.808.671.5093</a></h4>
+                        <ul class="hsocial">
+                            <li><a href="#" class="nfb"><img src="../images/fb.svg" alt="fblogo"></a></li>
+                            <li><a href="#" class="ntwitter"><img src="../images/twitter.svg" alt="twitterlogo"></a></li>
+                            <li><a href="#" class="nig"><img src="../images/ig.svg" alt="iglogo"></a></li>
+                        </ul>
+
+                    </section> 
+                    <a href="#menu" class="menu-link" title="open nav"><h2>MENU</h2></a>
+
+                    <nav id="menu" role="navigation" class="global cf">
+                        <ul class="gnav">
+                            <li><a href="about.html" >About</a></li>
+                            <li><a href="islands.html">Islands</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="book.html" class="current">BOOK NOW</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                
+                
+                
+                <main>
+                 <h1>Booking Information</h1>
+                 
+    <div id="formholder">
+    <form  name="bookform" id="bookform" method="post" action="formprocessor.php">
+      <fieldset>
+		<legend>Your Perfect Vacation Starts Here.</legend>
+          
+          
+		<label for="fname">First Name:</label>
+		<input type="text" name="fname" id="fname" size="30" maxlength="50" class="inputsize" placeholder="First Name" autofocus />
+
+   
+        <label for="lname">Last Name:</label>
+
+		<input type="hidden" name="subject" id="subject" value="subject for this form">
+
+		<input type="text" name="lname" id="lname" size="30" maxlength="50" class="inputsize" placeholder="Last Name"  />
+          
+          <label for="email"> Email Address: </label>
+		<input type="email" name="email" id="email" size="30" class="inputsize" placeholder="email@address.com" />
+          
+          <label for="phone">Phone Number: <br>
+              <span>example: xxx-xxx-xxxx</span></label>
+		<input type="tel" name="phone" id="phone" size="12" class="inputsize"  />
+
+		
+          
+          <label for="island">Choose Island:</label>
+          <select name="island" id="island" class="inputsize">
+              <option value="OAHU">O'ahu</option>
+              <option value="KAUAI">Kaua'i</option>
+              <option value="MAUI">Maui</option>
+              <option value="BIG ISLAND">Big Island</option>
+          </select>
+          
+          <label>Choose Package:</label>
+		<label for="family"><input type="radio" name="package" id="family" value="Family Package">Family</label>
+
+		<label for="honeymoon"><input type="radio" name="package" id="honeymoon" value="Honeymoon">Honeymoon</label>
+
+		<label for="tour"><input type="radio" name="package" id="tour" value="TOUR">Tours</label>
+
+		<label for="flight"><input type="radio" name="package" id="flight" value="Flight hotel">Flight &#43; Hotel</label>
+          
+          
+           <label>Choose Star Package:</label>
+		<label for="threestar"><input type="radio" name="star" id="threestar" value="Three Star Package">3 Star Package</label>
+
+		<label for="fourstar"><input type="radio" name="star" id="fourstar" value="Four Star Package">4 Star Package</label>
+
+		<label for="fivestar"><input type="radio" name="star" id="fivestar" value="Five Star Package">5 Star Package</label>
+          
+          <label for="arrdate">Arrival Date:<input type="date" name="arrdate" id="arrdate"></label>
+
+          <label for="depdate">Departure Date:<input type="date" name="depdate" id="depdate"></label>
+
+		<label for="addtolist"><input type="checkbox" name="addtolist" id="addtolist" value="yes" checked="checked"> Please Add Me To The Mailing List</label>
+		
+        <input type="submit" name="submit" value="Submit" />
+        </fieldset>
+    </form>
+    </div>
+</main>
+
+            
+
+            <footer class="bottom cf">
+                        <div class="footsec cf">
+                        <section class="fcontact cf">
+                          <h3>Experience Aloha</h3>
+                          <p> <a href="book.html">Book Online</a> or Call us at <a href="tel:18086715093" class="phone">1.808.671.5093</a></p>
+                          <p>1014 Ala Moana Road <br> Honolulu, Hawaii 96701</p>
+                        </section>
+
+                        <section class="flink cf">
+                          <ul class="footlinks cf">
+                            <li class="lihead sec1"><a href="islands.html">ISLANDS</a>
+                              <ul class="nest1 cf">
+                                <li>Oahu</li>
+                                <li>Kauai</li>
+                                <li>Maui</li>
+                                <li>Big Island</li>
+                              </ul>
+                            </li>
+
+                            <li class="lihead sec2 cf"><a href="packages.html">PACKAGES</a>
+                              <ul class="nest2">
+                                <li>Family Packages</li>
+                                <li>Couple Packages</li>
+                                <li>Tours</li>
+                                <li>Flights &#43; Hotels</li>
+                              </ul>
+                            </li>
+
+                            <li class="lihead sec3 cf"><a href="policy.html">POLICIES</a>
+                              <ul class="nest3">
+                                <li>Booking Terms</li>
+                                <li>Terms of Use</li>
+                                <li>Privacy Policy</li>
+                              </ul>
+                            </li>
+
+                            <li class="lihead sec4 cf"><a href="site.html">SITEMAP</a></li>
+                          </ul>
+                        </section>
+</div>
+                        <div class="footsec2 cf">
+                        <section class="fsocial cf">
+                         <div class="fsm cf">
+                          <h3>Follow Us and Share The Aloha</h3>
+                          <ul class="fsocial cf">
+                            <li><a href="http://www.facebook.com" class="nfb"><img src="../images/fb.svg" alt="fblogo"></a></li>
+                            <li><a href="#" class="ntwitter"><img src="../images/twitter.svg" alt="twitterlogo"></a></li>
+                            <li><a href="#" class="nig"><img src="../images/ig.svg" alt="iglogo"></a></li>
+                          </ul>
+                        </div>
+                        <div class="hform cf">
+                          <form class="contactform cf" name="eafcontact" id="eafcontact" method="post" action="formprocessor.php">
+                            <h3>Sign Up For Weekly Updates</h3>
+
+
+                            <label for="fullname">Name:</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Name" class="required" required>
+
+                            <label for="femail">Email Address:</label>
+                            <input type="text" name="femail" id="femail" placeholder="Email Address" class="required" required>
+
+                            <br/>
+                            <input type="submit" name="submit" value="Submit" />
+                          </form>
+                        </div>
+                      </section>
+  </div>
+                      <section class="fcopy cf">
+                        <small>©Copyright 2016 Experience Aloha, LLC. All Rights Reserved.</small>
+                      </section>
+                        
+                    </footer>
+                <div class="dynTop"><a href="#pageHeader"><i class="icon-up-open"></i>Back To Top </a></div>
+    </div>
+</body>
+</html>

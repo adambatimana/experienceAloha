@@ -1,0 +1,1883 @@
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Headland One', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Righteous', cursive;
+
+colors
+brown HEX #564138 RGB 86,65,56
+khaki HEX #F6F5AE RGB 246,245,174
+yellow HEX #F5F749 RGB 245,247,73
+red HEX #F24236 RGB 242,66,54
+blue HEX #2E86AB RGB 46,134,171
+
+*/
+
+*{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+.cf:before,
+.cf:after{
+  content:" ";
+  display: table;
+}
+.cf:after{
+  clear:both;
+}
+body{
+
+  font-family: 'Headland One', serif;
+  font-size: 1.125em;
+  min-width: 321px;
+  max-width: 1024px;
+  text-align: center;
+
+}
+
+header p{
+ margin: 1em;
+ font-family: 'Headland One', serif;
+ color:#2E86AB;
+
+}
+header p a{
+  font-family: 'Headland One', serif;
+  color:#2E86AB;
+
+}
+.slide1 a{
+
+  padding:1em;
+  border: 2px solid #FFF;
+  color: #F5F749;
+  border-radius:6px;
+
+}
+main div figure figcaption p{
+  color:#FFF;
+}
+
+header p a:visited{
+ color:#F24236;
+}
+header a.logo img{
+  padding: 1.5em;
+
+}
+img{
+  width: 100%;
+}
+button{
+  background-color: transparent;
+  border: 2px solid #F5F749;
+
+}
+a.book{
+  border: 2px solid #F24236;  
+  border-radius: 6px;
+  padding: .5em;
+  font-family: 'righteous';
+  font-weight: bold;
+  font-size: 1.125em; 
+  color: #F24236;
+  letter-spacing: .05em;
+}
+
+.adbutt{
+  background: url(../images/hawaii.jpg)left no-repeat;
+  min-height: 250px;
+  position: relative;
+  margin-top: 1.25em;
+}
+.adbutt h2{
+  margin: 1em auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+  color: #FFF;
+  position: relative;
+  top:2em;
+  line-height: 1.125em;
+  background-color: transparent;
+  letter-spacing: .05em;
+  font-weight: normal;
+  display: block;
+}
+.art h2{
+  top:1.5em; 
+
+}
+
+.art4 h2{
+  top:1.5em;
+}
+
+.adbutt a.book{
+
+  margin: 0 auto;
+  position: relative;
+  top: 65px;
+  color: #F5F749;
+  border: 2px solid #F5F749;
+}
+
+.adbutt a{
+  color: #F5F749;
+}
+.adbutt a.book:visited{
+  color: #F5F749;
+}
+
+a.book:visited{
+  color: #F24236;
+}
+
+a.phone{
+  margin-top: .5em;
+  color: #F24236;
+}
+.ut{
+ padding-top: 1em;
+ text-align: center;
+ margin: 0 auto;
+}
+
+
+/******* TYPOGRAPHY *******/
+li{
+  list-style: none;
+}
+a{
+ text-decoration: none;
+}
+.ut p{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+.hsocial{
+  width: 100%;
+
+}
+.hsocial li, .fsocial li{
+ display: inline-block;
+ margin: .5em;
+ height: 36px;
+ width: 36px;
+}
+
+h4{
+  font-family: 'Headland One', serif;
+  color:#2E86AB;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+
+}
+/************ NAV ************/
+nav{
+  background-color: rgba(46,134,171,0.5);
+  width: 100%;
+
+  /*        RGB 46,134,171*/
+}
+.menu-link h2{
+  padding: 1em;
+  text-align: left;
+  font-size: 1.125em;
+  color: #FFF;
+  letter-spacing: .05em;
+  background-color: #2E86AB;
+  margin-top: 1em;
+}
+
+nav ul li{
+  padding: .75em;
+  letter-spacing: .05em;
+
+}
+nav ul li:last-child{
+  padding-bottom: 1.125em;
+}
+
+nav ul li a{
+  color: #FFF;
+}
+
+nav ul li a:visited{
+  color: #FFF;
+}
+
+nav ul li a:hover{
+  color: #F24236;
+}
+
+.current{
+  color: #F24236;
+}
+.current:visited{
+  color: #F24236;
+}
+
+div.dynTop {
+	position: fixed;
+	bottom: 2em;
+	right: 5%;
+	font-size: 0.7em;
+	font-style: italic;
+	text-align: center;
+	background-color: rgba(78,45,38,0.5);
+	padding: 1em;
+	border-radius: 6px;
+	display: none;
+}
+
+div.dynTop:hover{
+	background-color: rgba(78,45,38,0.8);
+}
+div.dynTop a{
+	color: white;
+	padding: 0.65em 0;
+}
+
+/*fallback for browser without js*/
+.no-js div.dynTop{
+	display: block;
+  } /*needs modernzr*/
+  .no-js a.menu-link{
+   display: none;
+ }
+
+ /**************** TOGGLE *******************/
+ a.menu-link {
+   float: left;
+   display: block;
+   width:100%;
+   text-decoration:none;
+ }
+/*a.menu-link h1:before{
+    content: "+";
+}
+a.active h1:before{
+    content: "-";
+    }*/
+    nav{
+      clear: both;
+      -webkit-transition:all 0.3s ease-out;
+      -mos-transition:all 0.3s ease-out;
+      transition:all 0.3s ease-out;
+    }
+    .toggle nav{
+      overflow: hidden;
+      max-height: 0px;
+    }
+    nav.active {
+      max-height: 30em;
+    }
+
+
+    /**************** TO TOP *******************/
+
+    /**************** SLIDER *******************/
+
+    main{
+      position: relative;
+    }
+    .bss-slides figcaption{
+      position: absolute;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1em;
+      top: 2.25em;
+      width: 100%;
+      margin: 0 auto;
+      color: #fff;
+      opacity: 0;
+      -webkit-transition: opacity 4s;
+      transition: opacity 4s;
+    }
+    .bss-slides figcaption h2{
+      font-size: 1.25em;
+      margin-bottom: .5em;
+
+
+    }
+
+    .slide1 p{
+     margin-bottom: 2em;
+   }
+   .slide1 a{
+    font-size: .75em;
+  }
+  /**************** SLIDER *******************/
+
+  /**************** Aside *******************/
+  aside{
+    padding: 1em;
+
+  }
+  aside img{
+    margin-top: 1em;
+    width: 80%;
+  }
+
+  aside{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: .05em;
+    color:#2E86AB;
+    font-weight: bold;
+  }
+
+  /************ FOOTER ************/
+
+  footer{
+    background-color: #F6F5AE;
+    padding: 1.5em 1em 3em 1em;
+    letter-spacing: .05em;
+  }
+  footer section{
+    margin: 1em;
+  }
+  footer h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #2E86AB;
+    line-height: 1.25em;
+  }
+  .fcontact p a{
+    color:#F24236;
+  }
+  .fcontact p {
+    margin: 1em;
+    line-height: 1.25em;
+    color: #564138;
+  }
+  .flink{
+    margin: 2em;
+    font-family: 'Headland One', serif;
+    letter-spacing: .05em;
+  }
+  .sec1,
+  .sec2{
+    display: none;
+  }
+
+
+
+  .footlinks li a{
+    color: #2E86AB;
+  }
+  .footlinks li>ul{
+    margin: 1.25em; 
+
+  }
+  .lihead{
+    margin-top: 3em;
+
+  }
+  .footlinks ul>li{
+    margin: .5em; 
+
+  }
+  .footlinks li a{
+    font-size: 1.25em; 
+  }
+  .footlinks li a:visited{
+    color: #2E86AB;
+
+  }
+  .fsm, .hform{
+    margin-top: 3em;
+  }
+  .hform .contactform{
+    padding: .5em;
+    margin: 0 auto;
+  }
+  .fsocial{
+    margin-top: .5em;
+  }
+  input{
+    padding: 1em;
+    width: 100%;
+    border: none;
+    margin: 1em 0;
+  }
+  input[type=text]{
+    color: #2E86AB;
+  } 
+  input::-webkit-input-placeholder{
+    color: rgba(46,134,171, 0.5);
+    text-transform: uppercase;
+  }
+
+  .fcopy{
+    margin-top: 4em;
+    line-height: 1.125em;
+    color: #564138;
+  }
+  footer label{
+    color: #564138;
+    font-family: 'Headland One', serif;
+    font-size: 1.25em;
+  }
+  /**************** ABOUT US PAGE *******************/
+
+  #dabout main h1{
+    background-color: #FFF;
+    color: #2E86AB;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 1em;
+    margin: 0;
+  }
+
+  #dabout main{
+    padding: 1em;
+  }
+  #dabout main p{
+    line-height: 1.25em;
+    margin-bottom: 1em;
+  }
+  #dabout h3{
+    font-family: 'Raleway', sans-serif;
+    color: #2E86AB;
+    padding: 1em;
+    line-height: 1.25em;
+  }
+  aside h2{
+   padding: 1em;
+   font-size: 1.5em;
+ }
+
+ #dabout aside{
+  padding: .5em;
+}
+
+#dabout figure{
+  margin: 1em 0 2em 0;
+}
+#dabout figure img{
+  border-radius: 8px;
+}
+
+/**************** ISLANDS PAGE *******************/
+
+#dislands main h1{
+  background-color: #FFF;
+  color: #2E86AB;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 1em;
+  margin: 0;
+  font-size: 1.75em;
+}
+
+#dislands main{
+  padding: 1em;
+}
+#dislands section{
+  position: relative;
+  border-radius: 8px;
+}
+#dislands section h2{
+  position: relative;
+  top:2.20em;
+}
+#dislands a .art4 h2{
+  top: 1.75em;
+}
+
+/**************** OAHU PAGE *******************/
+#doahu body{
+ font-family: 'Headland One', serif;
+}
+#doahu main h1{    
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .05em;
+  margin: 0;
+  font-size: 3.5em;
+  position: relative;
+  top: 1.5em;
+}
+#doahu .ihead{
+  background: url(https://unsplash.it/400/250) center no-repeat;
+  min-height: 250px;
+  background-size: cover;
+  border-radius: 0;
+}
+
+#doahu main{
+  padding: 1em;
+  width: 100%:
+}
+#doahu main h2{
+ color: #2E86AB;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ padding-bottom: 1em;
+ font-size: 1.5em;
+}
+#doahu main h2+p{
+ color: #564138;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+ padding-bottom: 1em;
+ font-size: 1em;
+}
+#doahu section{
+  position: relative;
+  border-radius: 8px;
+}
+#doahu section h2{
+  position: relative;
+  top:2.20em;
+}
+#doahu main figure{
+  width: 100%;
+
+  border-radius:6px 6px;
+  position: relative;
+  margin: 3em 0;
+}
+#doahu .fighead{
+  border-radius:6px ;
+}
+#doahu figure h3{
+  font-family: 'Raleway', sans-serif;  
+  font-size: 2.125em;
+  letter-spacing: .05em;
+  display: block;
+  position: relative;
+  top: 2.20em;
+}
+#doahu figure:last-child h3{
+  top:1.75em;
+}
+#doahu figcaption ul{
+  width: 100%;
+  margin: 1em auto; 
+  padding: 1em 0;   
+  line-height: 2em;
+}
+#doahu figcaption li{
+  color:#564138;
+  font-size: 1.125em;
+  text-align: left;
+}
+#doahu .view{
+  padding:1em;
+  background-color: #2E86AB;
+  color: #F5F749;
+  border-radius:6px;
+}
+#doahu main figure figcaption p{
+  width: 100%;
+  display: inline-block;
+}
+#doahu figure div{
+  background: url(https://unsplash.it/500/200) center no-repeat ;
+  background-size: cover;
+  min-height: 200px;
+  color: #FFF;
+}
+
+
+/**************** kauai PAGE *******************/
+#dkauai body{
+ font-family: 'Headland One', serif;
+}
+#dkauai main h1{    
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .05em;
+  margin: 0;
+  font-size: 3.5em;
+  position: relative;
+  top: 1.5em;
+}
+#dkauai .ihead{
+  background: url(https://unsplash.it/400/250) center no-repeat;
+  min-height: 250px;
+  background-size: cover;
+  border-radius: 0;
+}
+
+#dkauai main{
+  padding: 1em;
+}
+#dkauai main h2{
+ color: #2E86AB;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ padding-bottom: 1em;
+ font-size: 1.5em;
+}
+#dkauai main h2+p{
+ color: #564138;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+ padding-bottom: 1em;
+ font-size: 1em;
+}
+#dkauai section{
+  position: relative;
+  border-radius: 8px;
+}
+#dkauai section h2{
+  position: relative;
+  top:2.20em;
+}
+#dkauai main figure{
+  width: 100%;
+  border-radius:6px 6px;
+  position: relative;
+  margin: 3em 0;
+}
+#dkauai .fighead{
+  border-radius:6px ;
+}
+#dkauai figure h3{
+  font-family: 'Raleway', sans-serif;  
+  font-size: 2.125em;
+  letter-spacing: .05em;
+  display: block;
+  position: relative;
+  top: 2.20em;
+}
+#dkauai figure:last-child h3{
+  top:1.75em;
+}
+#dkauai figcaption ul{
+  width: 90%;
+  margin: 1em auto; 
+  padding: 1em 0;   
+  line-height: 2em;
+}
+#dkauai figcaption li{
+  color:#564138;
+  font-size: 1.125em;
+  text-align: left;
+}
+#dkauai .view{
+  padding:1em;
+  background-color: #2E86AB;
+  color: #F5F749;
+  border-radius:6px;
+}
+#dkauai figure div{
+  background: url(https://unsplash.it/500/200) center no-repeat ;
+  background-size: cover;
+  min-height: 200px;
+  color: #FFF;
+}
+#dkauai main figure figcaption p{
+  width: 100%;
+  display: inline-block;
+}
+
+/**************** maui PAGE *******************/
+#dmaui body{
+ font-family: 'Headland One', serif;
+}
+#dmaui main h1{    
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .05em;
+  margin: 0;
+  font-size: 3.5em;
+  position: relative;
+  top: 1.5em;
+}
+#dmaui .ihead{
+  background: url(https://unsplash.it/400/250) center no-repeat;
+  min-height: 250px;
+  background-size: cover;
+  border-radius: 0;
+}
+
+#dmaui main{
+  padding: 1em;
+}
+#dmaui main h2{
+ color: #2E86AB;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ padding-bottom: 1em;
+ font-size: 1.5em;
+}
+#dmaui main h2+p{
+ color: #564138;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+ padding-bottom: 1em;
+ font-size: 1em;
+}
+#dmaui section{
+  position: relative;
+  border-radius: 8px;
+}
+#dmaui section h2{
+  position: relative;
+  top:2.20em;
+}
+#dmaui main figure{
+  width: 100%;
+  /*    background-color: #F6F5AE;*/
+  border-radius:6px 6px;
+  position: relative;
+  margin: 3em 0;
+}
+#dmaui .fighead{
+  border-radius:6px ;
+}
+#dmaui figure h3{
+  font-family: 'Raleway', sans-serif;  
+  font-size: 2.125em;
+  letter-spacing: .05em;
+  display: block;
+  position: relative;
+  top: 2.20em;
+}
+#dmaui figure:last-child h3{
+  top:1.75em;
+}
+#dmaui figcaption ul{
+  width: 90%;
+  margin: 1em auto; 
+  padding: 1em 0;   
+  line-height: 2em;
+}
+#dmaui figcaption li{
+  color:#564138;
+  font-size: 1.125em;
+  text-align: left;
+}
+#dmaui .view{
+  padding:1em;
+  background-color: #2E86AB;
+  color: #F5F749;
+  border-radius:6px;
+}
+#dmaui figure div{
+  background: url(https://unsplash.it/500/200) center no-repeat ;
+  background-size: cover;
+  min-height: 200px;
+  color: #FFF;
+}
+#dmaui main figure figcaption p{
+  width: 100%;
+  display: inline-block;
+}
+/**************** bigisland PAGE *******************/
+#dbigisland body{
+ font-family: 'Headland One', serif;
+}
+
+#dbigisland main h1{    
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .05em;
+  margin: 0;
+  font-size: 3.5em;
+  position: relative;
+  top: 1.5em;
+}
+#dbigisland .ihead{
+  background: url(https://unsplash.it/400/250) center no-repeat;
+  min-height: 250px;
+  background-size: cover;
+  border-radius: 0;
+}
+
+#dbigisland main{
+  padding: 1em;
+}
+#dbigisland main h2{
+ color: #2E86AB;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ padding-bottom: 1em;
+ font-size: 1.5em;
+}
+#dbigisland main h2+p{
+ color: #564138;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+ padding-bottom: 1em;
+ font-size: 1em;
+}
+#dbigisland section{
+  position: relative;
+  border-radius: 8px;
+}
+#dbigisland section h2{
+  position: relative;
+  top:2.20em;
+}
+#dbigisland main figure{
+  width: 100%;
+  /*    background-color: #F6F5AE;*/
+  border-radius:6px 6px;
+  position: relative;
+  margin: 3em 0;
+}
+#dbigisland .fighead{
+  border-radius:6px ;
+}
+#dbigisland figure h3{
+  font-family: 'Raleway', sans-serif;  
+  font-size: 2.125em;
+  letter-spacing: .05em;
+  display: block;
+  position: relative;
+  top: 2.20em;
+}
+#dbigisland figure:last-child h3{
+  top:1.75em;
+}
+#dbigisland figcaption ul{
+  width: 90%;
+  margin: 1em auto; 
+  padding: 1em 0;   
+  line-height: 2em;
+}
+#dbigisland figcaption li{
+  color:#564138;
+  font-size: 1.125em;
+  text-align: left;
+}
+#dbigisland .view{
+  padding:1em;
+  background-color: #2E86AB;
+  color: #F5F749;
+  border-radius:6px;
+}
+#dbigisland figure div{
+  background: url(https://unsplash.it/500/200) center no-repeat ;
+  background-size: cover;
+  min-height: 200px;
+  color: #FFF;
+}
+#dbigisland main figure figcaption p{
+  width: 100%;
+  display: inline-block;
+}
+/************* PACKAGES PAGE *************/
+
+#dpackages main h1{
+  background-color: #FFF;
+  color: #2E86AB;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 1em;
+  margin: 0;
+  font-size: 1.5em;
+}
+#dpackages main h3{
+
+  color: #564138;
+  line-height:1.5 ;
+  font-size: 1.125em;
+}
+
+#dpackages main{
+  padding: 1em;
+}
+#dpackages section{
+  position: relative;
+  border-radius: 8px;
+}
+#dpackages section h2{
+  position: relative;
+  top:2.15em;
+}
+#dpackages section.art2 h2{
+  position: relative;
+  top:1.75em;
+}
+
+/**************** CONTACT PAGE ************/
+#dcontact main h1{
+  background-color: #FFF;
+  color: #2E86AB;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 1em;
+  margin: 0;
+  font-size: 2em;
+}
+#dcontact main h2{
+  background-color: #FFF;
+  color: #2E86AB;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 1em;
+  margin: 0;
+}
+
+#dcontact p{
+  color: #564138;
+  line-height: 1.25em;
+  margin: 1em;
+}
+#dcontact main p a{
+ color:#F24236;
+}
+#dcontact main p a:visited{
+  color:#2E86AB;
+}
+#dcontact main h2 span{
+  font-size: 2em;
+}
+#dcontact .contactform{
+  color: #564138;
+  background-color: #F6F5AE;
+  padding: 1em;   
+  border-radius: 8px;
+}
+#dcontact #eacontact label{
+  display: block;
+  font-size: 1.25em;
+  margin-top: 1em;
+  text-align: left;
+}
+#dcontact #eacontact label[for="question"]{
+ margin-top: 1.5em;
+ padding: .5em 0;
+}
+#dcontact .cform{
+ margin-top: 1em;
+}
+input[type="submit"]{
+  background-color: #2E86AB;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125em;
+  padding: .5em;
+  border-radius: 5px;
+}
+textarea{
+  border: none;
+  margin: 1em auto;
+
+}
+select{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: .5em;
+}
+
+/**************** HIking PAGE ************/
+#dhike{
+  color: #564138;
+}
+#dhike .hikehead{
+  background: url(http://fillmurray.com/900/250) center no-repeat;
+  min-height: 250px;
+}
+#dhike main section h1{
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  font-size: 3em;
+  color: #FFF;
+  letter-spacing: .08em;
+  font-weight: normal;
+  position: relative;
+  top:1.5em;
+}
+#dhike main{
+  padding: 1em;
+}
+
+#dhike h1{
+  background-color: transparent;
+  text-align: center;
+  color: #2E86AB;
+}
+#dhike main h2{
+  margin: 0;
+  padding: 1em 0 0 0 ;
+  font-size:2em;
+  font-weight: bold;
+  color:#2E86AB;
+}
+#dhike main h3{
+  font-family: "Quicksand", sans-serif;
+  color: #2E86AB;
+  text-align: center;
+  font-size: 1.25em;
+  margin: 1em auto;
+}
+
+#dhike main p{
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/**************** Hotel PAGE ************/
+#dhotel .hotelhead{
+  background: url(http://fillmurray.com/900/250) center no-repeat;
+  min-height: 250px;
+}
+
+#dhotel main section h1{
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  font-size: 3em;
+  color: #FFF;
+  letter-spacing: .08em;
+  font-weight: normal;
+  position: relative;
+  top:1em;
+}
+#dhotel main{
+  padding: 1em;
+}
+#dhotel main h2{
+  margin: 0;
+  padding: 1em 0 0 0 ;
+  font-size:2em;
+  font-weight: bold;
+  color:#2E86AB;
+}
+#dhotel main p{
+  color:#564138;
+}
+#dhotel main > p{
+  font-size: 1.5em;
+  line-height: 1.125em; 
+  margin: 1em 0;
+
+}
+#dhotel main section ul{
+  float: none;
+}
+
+
+/****************Couple PAGE ************/
+#dcouple .couplehead{
+  background: url(http://fillmurray.com/900/250) center no-repeat;
+  min-height: 250px;
+}
+
+#dcouple main section h1{
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  font-size: 3em;
+  color: #FFF;
+  letter-spacing: .08em;
+  font-weight: normal;
+  position: relative;
+  top:1.5em;
+}
+
+#dcouple main{
+  padding: 1em;
+
+}
+#dcouple main p{
+  color:#564138;
+}
+#dcouple main > p{
+  font-size: 1em;
+  line-height: 1.125em; 
+ 
+}
+#dcouple main section h3{
+  color:#2E86AB;
+  font-size: 1.25em;
+  padding: 1em;
+}
+#dcouple main section h2{
+  color:#2E86AB;
+  font-size: 2em;
+  font-weight: bold;
+}
+#dcouple main section a{
+ display: block;
+ margin: 1em 0;
+}
+#dcouple section{
+  margin: 1em 0;
+}
+#dcouple header .ut{
+  margin:0;
+}
+#dcouple main section ul{
+  float: none;
+}
+#dcouple section h2{
+  font-size: 2em;
+  padding: 0;
+}
+
+#dcouple section img{
+  margin: 1em 0;
+}
+#dcouple section p{
+  margin: 1em 0;
+}
+.price span{
+  color: #2E86AB;
+}
+/****************Cruise PAGE ************/
+#dcruise .cruisehead{
+  background: url(http://fillmurray.com/900/250) center no-repeat;
+  min-height: 250px;
+}
+
+#dcruise main section h1{
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  font-size: 3em;
+  color: #FFF;
+  letter-spacing: .08em;
+  font-weight: normal;
+  position: relative;
+  top:1.5em;
+}
+#dcruise main{
+  padding: 1em;
+
+}
+#dcruise main p{
+  color:#564138;
+}
+#dcruise main > p{
+  font-size: 1.5em;
+  line-height: 1.125em; 
+  margin-top: 1em;
+}
+#dcruise main section h3{
+  color:#2E86AB;
+  font-size: 1.25em;
+  padding: 1em;
+}
+#dcruise main section a{
+ display: block;
+ margin: 1em 0;
+}
+
+#dcruise section h2{
+  font-size: 2em;
+  padding: 0;
+  font-weight: bold;
+  color:#2E86AB;
+}
+#dcruise main section ul{
+  float: none;
+}
+#dcruise section img{
+  margin: 1em 0;
+}
+#dcruise section p{
+  margin: 1em 0;
+}
+
+/**************** Booking info PAGE ************/
+
+#dbook main h1{
+  font-family: 'Raleway', sans-serif;
+  padding: 1em;
+  font-size: 2em;
+  color: #2E86AB;
+  letter-spacing: .08em;
+  font-weight: bold;
+  line-height: 1.25em;
+}
+
+#dbook legend{
+  font-size: 1.5em;
+  line-height: 1.5em;
+
+}
+#dbook h1{
+  fon
+}
+#dbook label{
+	font-size: 1.25em;
+	font-weight: bold;
+  margin: 1 auto;
+  text-align: center;
+
+}
+label{
+	display: block;
+}
+#formholder{
+	width: 90%;
+	margin: 0 auto;
+  padding: 1em;
+  color:#564138;
+  background-color:  #F6F5AE;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  border-radius: 6px;
+}
+select{
+  background: #FFF;
+}
+.inputsize{
+	width: 80%;
+	font-size: 1em;
+	padding:.5em;
+}
+#dbook main{
+  margin-bottom: 1em;
+}
+
+#dbook footer label{
+  font-size: normal;
+}
+/**************** Sightseeing PAGE ************/
+#dsight{
+  color: #564138;
+}
+#dsight .sighthead{
+  background: url(http://fillmurray.com/900/250) center no-repeat;
+  min-height: 250px;
+  width: 100%;
+}
+#dsight main h1{
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  font-size: 2em;
+  color: #FFF;
+  letter-spacing: .08em;
+  font-weight: normal;
+  position: relative;
+  top:2.75em;
+}
+#dsight main{
+  padding: 1em;
+}
+
+#dsight h1{
+  background-color: transparent;
+  text-align: center;
+  color: #2E86AB;
+}
+#dsight main h2{
+  margin: 0;
+  padding: 1em 0 0 0 ;
+  font-size:2em;
+  font-weight: bold;
+  color:#2E86AB;
+}
+#dsight main h3{
+  font-family: "Quicksand", sans-serif;
+  color: #2E86AB;
+  text-align: center;
+  font-size: 1.25em;
+  margin: 1em auto;
+}
+
+#dsight main p{
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+/**************** Tour PAGE ************/
+#dtour{
+  color: #564138;
+}
+
+#dtour .tourhead{
+  background: url(http://fillmurray.com/900/250) center no-repeat;
+  min-height: 250px;
+  width:100%;
+}
+#dtour main h1{
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  font-size: 2em;
+  color: #FFF;
+  letter-spacing: .08em;
+  font-weight: normal;
+  position: relative;
+  top:2.75em;
+}
+#dtour main{
+  padding: 1em;
+}
+
+#dtour main section{
+  margin: 2em 0 3em 0;
+}
+#dtour h1{
+  background-color: transparent;
+  text-align: center;
+  color: #2E86AB;
+}
+#dtour main h2{
+  margin: 0;
+  padding: 1em 0 0 0 ;
+  font-size:2em;
+  font-weight: bold;
+  color:#2E86AB;
+}
+#dtour main h3{
+  font-family: "Quicksand", sans-serif;
+  color: #2E86AB;
+  text-align: center;
+  font-size: 1.25em;
+  margin: 2em 0 1em 0 ;
+}
+
+#dtour main p{
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+#dtour main section ul{
+  float: none;
+}
+
+/**************** flight PAGE ************/
+#dflight .flighthead{
+  background: url(http://fillmurray.com/900/250) center no-repeat;
+  min-height: 250px;
+  width: 100%;
+}
+
+#dflight main h1{
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  font-size: 3em;
+  color: #FFF;
+  letter-spacing: .08em;
+  font-weight: normal;
+  position: relative;
+  top:1.75em;
+}
+#dflight main{
+  padding: 1em;
+}
+#dflight main h2{
+  margin: 0;
+  padding: 1em 0 0 0 ;
+  font-size:2em;
+  font-weight: bold;
+  color:#2E86AB;
+}
+#dflight main p{
+  color:#564138;
+}
+#dflight main > p{
+  font-size: 1.5em;
+  line-height: 1.125em; 
+  margin: 1em 0;
+}
+#dflight main section ul{
+  float: none;
+}
+
+/*ERROR PAGE*/
+#error main {
+  font-family: 'Righteous', cursive;
+  margin-bottom: 2em;
+}
+#error main h1{
+
+  color: #F24236;
+  font-size: 4em;
+  margin: 1em auto;
+
+}
+#error main img{
+  width: 75%;
+  border-radius: 20em;
+}
+
+#error main h2{
+  color:  #2E86AB;
+  margin: 1em auto;
+  font-size: 2em;
+}
+#error main h3{
+  color:  #2E86AB;
+  margin: 1em auto;
+  font-size: 1.5em;
+}
+
+#error main p{
+  color:  #2E86AB;
+  margin: 1em auto;
+  font-size: 1em;
+}
+
+#error main a{
+  color: #F24236;
+}
+
+@media only screen and (min-width:560px) {
+  header{
+    background:rgba(46,134,171, 0.5);
+    padding-bottom: 1em;
+
+  }
+  header a.logo img {
+    padding: .5em;
+    width: 35%;
+    float: left;
+    margin-top: .5em;
+    margin-left: .5em;
+  }
+  header .ut h4{
+   font-size: .75em;
+   display: inline-block;
+   float: right;
+   text-align: right;
+   width: 100%;
+   margin: 0;
+   padding: 0 .75em;
+   color: #FFF;
+ }	
+ .ut {
+  padding-top: 1em;
+  text-align: center;
+  margin: 0 auto;
+  width: 55%;
+  float: right;
+}
+.ut a.book{
+
+  display: none;
+}
+.hsocial{
+  float: right;
+  text-align: right;
+  /*		padding: .5em 0;*/
+}
+.hsocial li {
+  display: inline-block;
+  margin: .5em;
+  height: 26px;
+  width: 26px;
+}
+/*nav styles*/
+a.menu-link{
+	display:none;
+}
+.toggle nav[role=navigation] {
+ overflow:auto;
+ max-height: 3em;
+}
+
+#menu {
+ width: 100%;
+ float: right;
+ position: absolute;
+ top: 4.5em;
+
+}
+
+#menu li {
+	display: inline-block
+}
+#menu a {
+	display:inline;
+  font-size: .75em;
+  text-align: center;
+  cursor: pointer;
+  padding:.5em .5em;		
+  color:white;	
+
+}
+nav{
+  background-color: transparent;
+}
+nav ul li{
+  padding: .5em 0;
+}
+ul{
+  float: right;
+}
+main{
+  margin-bottom: 1em;
+}
+main .bss-slides figcaption { 
+  top: 8em;
+}
+
+main .bss-slides figcaption h2{ 
+ font-size: 2em;
+} 
+main a.read section{
+
+  border-radius: 6px;
+}
+main a .adbutt {
+  width: 45%;
+  float: left;
+  margin: .5em;
+}
+.buttcontain{
+  width: 100%;
+  padding: 1em;
+  position: relative;
+  left: 1em;
+} 
+
+.adbutt h2 {
+  top: 1em;
+}
+.art h2{
+  top: .5em;
+}
+.art4 h2{
+  top: .5em;
+}
+aside{
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0;
+}
+aside a{
+  width: 50%;
+  float: left;
+}
+aside h2{
+  font-size: 1.5em;
+}
+.bottom{
+  width: 100%;
+  padding: 1em;
+}
+.bottom section {
+  width: 100%;
+  text-align: left;
+  display: block;
+  margin: 1em .5em;
+}
+.footlinks .sec1,
+.footlinks .sec2{
+  display: block;
+}
+.footlinks .sec1{
+  margin-top: 0;
+}
+.footsec{
+  width: 35%;
+  float: left;
+}
+.footsec2{
+  width: 65%;
+  float: right;
+  padding: 0 1.5em;
+}
+.bottom .fcontact h3{
+  padding: 0;
+}
+.footsec .fcontact p {
+  margin: 1em 0;
+}
+.footsec ul{
+float: left;
+width: 70%;
+text-align: left;
+}
+.footsec .footlinks li>ul {
+ margin: 1em 0;;
+}
+.footlinks .lihead{
+  margin-top: 0;
+}
+footer .fcopy{
+  clear: both;
+  padding: 1em 0;
+}
+footer .fsm{
+  margin: 0;
+  text-align: center;
+}
+footer .fsm h3{
+  font-size: 1em;
+}
+footer .hform{
+  margin-top: 1em;
+  padding: 0 2em;
+}
+footer .hform h3{
+  font-size: 1em;
+  text-align: center;
+}
+footer .hform label{
+  font-size: 1em;
+}
+footer input{
+  padding: .75em;
+}
+footer input[type="submit"] {
+  font-size: 1em;
+  padding: .5em;
+  border-radius: 5px;
+  width: 50%;
+}
+footer .fsocial{
+  float: none;
+}
+figure figcaption p{
+  font-family: 'Headland One', serif;
+  color: #564138;
+  font-weight: normal;
+}
+figcaption h2{
+  font-size: 1.25em;
+}
+#dabout aside figure {
+  margin: 1em auto;
+  width: 50%;
+
+}
+#about aside h2{
+  font-size: 1.5em;
+}
+#dabout .staff1{
+  width: 45%;
+  display: inline-block;
+  margin: 0 auto;
+}
+#dislands section h2 {
+
+  top: 1.4em;
+}
+#dislands a .art4 h2 {
+  top: .4em;
+}
+#dpackages section h2 {
+  top: 1.3em;
+}
+#dpackages section.art2 h2 {
+  top: 1.3em;
+}
+.mcontact{
+  width: 100%;
+}
+.mcontact section{
+  width: 50%;
+  float: left;
+}
+.mcontact section:last-child{
+ width: 100%;
+}
+
+#dcontact .cform {
+  margin: 1em auto;
+  width: 80%;
+}
+#dcontact #eacontact label {
+ font-size: .75em;
+}
+/*input[type="submit"] {
+ width: 25%;
+}*/
+#dbook #formholder #bookform label{
+  margin:1.5em 0;
+}
+#dhike main{
+  width: 100%;
+}
+#dhike main section.hikehead{
+  width: 100%;
+  display: inline-block;
+}
+#dhike main section{
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
+#dhotel main .hotelhead{
+  width: 100%;
+}
+#dhotel main section{
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
+#dcouple main .couplehead {
+  width: 100%;
+}
+#dcouple main section {
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
+#dcruise main .cruisehead{
+ width: 100%;
+}
+#dcruise main section{
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
+#doahu main figure,
+#dkauai main figure,
+#dmaui main figure,
+#dbigisland main figure{
+  width: 45%;
+  display: inline-block;
+  margin: .5em ;
+  background-color: #F6F5AE;
+}
+#doahu main figure ul,
+#dkauai main figure ul,
+#dmaui main figure ul,
+#dbigisland main figure ul{
+  width: 100%;
+  padding: 0 .5em;
+}
+#dsight main section,
+#dtour main section,
+#dflight main section {
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
+}
+@media only screen and (min-width:730px){
+.bottom .footsec {
+  width: 60%;
+}
+.bottom .footsec2 {
+  width: 40%;
+}
+.bottom .footlinks .lihead{
+  width: 45%;
+  display: inline-block;
+}
+#menu {
+  top: 5.5em;
+}
+footer input[type="submit"]{
+  width: 60%;
+}
+footer .hform{
+  padding:0;
+}
+footer .fcopy{
+  text-align: center;
+  font-size: .75em;
+}
+}
+@media only screen and (min-width:960px){
+  header a.logo img{
+    width:25%;
+  }
+  #menu{
+        top: .5em;
+    right: 10em;
+    font-size: 1.125em;
+  }
+  nav ul li{
+    margin: 0 .5em;
+  }
+  .ut{
+    padding:1.7em 1em;
+  }
+  .hsocial li{
+    width: 36px;
+    height: 36px;
+    margin: 1em .25em;
+  }
+ #dhome main .buttcontain {
+    width: 100%;
+    padding: .5em;
+    margin: 1em auto;
+    left: 0;
+ }
+
+.buttcontain a section{
+    width: 24%;
+    float: left;
+    margin: .25em;
+    padding:0;
+  }
+.bss-slides img{
+    max-height: 350px;
+  }
+  .buttcontain a section h2{
+    font-size: 1.75em;
+  }
+  .adbutt{
+    min-height: 150px;
+  }
+  main .bss-slides figcaption {
+    top: 4em;
+}
+aside a{
+  width: 25%;
+}
+.bottom .footsec {
+    width: 65%;
+}
+.bottom .footsec2 {
+    width: 35%;
+}
+.bottom .fcontact{
+  width: 25%;
+  float: left;
+  margin: 0 1em;
+}
+.bottom .flink{
+width: 65%;
+display: inline-block;
+}
+#dhike main section,
+#dcouple main section,
+#dhotel main section,
+#dcruise main section,
+{
+    width: 25%;
+    float: left;
+    padding: 1em;
+}
+#dcontact main{
+  width: 50%;
+  float: left;
+  padding:1em;
+}
+#dcontact aside{
+  width: 50%;
+  float: right;
+}
+#dcontact footer {
+  clear: both;
+}
+#dabout aside figure{
+  width: 40%;
+}
+#dabout .staff1{
+    width: 25%;
+    }
+#dislands main section,
+#dpackages main section {
+    width: 75%;
+    float: none;
+    margin: 0 auto;
+}
+#bookform,
+#bookform label,
+#bookform input{
+  text-align: left;
+  width: 60%;
+}
+fieldset {
+  width: 100%;
+}
+}
