@@ -27,7 +27,8 @@ blue HEX #2E86AB RGB 46,134,171
   clear:both;
 }
 body{
-
+    margin: 0 auto;
+    width: 100%;
   font-family: 'Headland One', serif;
   font-size: 1.125em;
   min-width: 321px;
@@ -68,6 +69,10 @@ header a.logo img{
 }
 img{
   width: 100%;
+}
+.ad{
+  width: 100%;
+  margin: 1em auto;
 }
 button{
   background-color: transparent;
@@ -151,6 +156,7 @@ li{
 a{
  text-decoration: none;
 }
+
 .ut p{
   margin-top: 2em;
   margin-bottom: 1em;
@@ -460,7 +466,7 @@ a.active h1:before{
   margin: 1em 0 2em 0;
 }
 #dabout figure img{
-  border-radius: 8px;
+  border-radius: 8em;
 }
 
 /**************** ISLANDS PAGE *******************/
@@ -1447,7 +1453,11 @@ select{
    margin: 0;
    padding: 0 .75em;
    color: #FFF;
- }	
+ }
+  #menu .current{
+    color:#F24236;
+    border-bottom: 2px solid #F24236;
+  }
  .ut {
   padding-top: 1em;
   text-align: center;
@@ -1528,10 +1538,9 @@ main a .adbutt {
   margin: .5em;
 }
 .buttcontain{
-  width: 100%;
+  width: 90%;
   padding: 1em;
-  position: relative;
-  left: 1em;
+margin: 0 auto;
 } 
 
 .adbutt h2 {
@@ -1658,7 +1667,7 @@ figcaption h2{
   top: 1.4em;
 }
 #dislands a .art4 h2 {
-  top: .4em;
+  top: 1.3em;
 }
 #dpackages section h2 {
   top: 1.3em;
@@ -1774,6 +1783,9 @@ footer .fcopy{
   text-align: center;
   font-size: .75em;
 }
+  .bss-slides img{
+    max-height: 450px;
+  }
 }
 @media only screen and (min-width:960px){
   header a.logo img{
@@ -1821,7 +1833,7 @@ footer .fcopy{
     top: 4em;
 }
 aside a{
-  width: 25%;
+  width: 33%;
 }
 .bottom .footsec {
     width: 65%;
@@ -1845,7 +1857,6 @@ display: inline-block;
 {
     width: 25%;
     float: left;
-    padding: 1em;
 }
 #dcontact main{
   width: 50%;
@@ -1863,7 +1874,7 @@ display: inline-block;
   width: 40%;
 }
 #dabout .staff1{
-    width: 25%;
+    width: 30%;
     }
 #dislands main section,
 #dpackages main section {
@@ -1880,4 +1891,47 @@ display: inline-block;
 fieldset {
   width: 100%;
 }
+  #doahu main figure,
+  #dkauai main figure,
+  #dmaui main figure,
+  #dbigisland main figure{
+    width: 90%;
+  }
+  #doahu main figure ul,
+  #dkauai main figure ul,
+  #dmaui main figure ul, 
+  #dbigisland main figure ul{
+    width: 35%;
+    float: left;
+    margin: 0 auto;
+  }
+  #doahu .fighead,
+  #dkauai .fighead,
+  #dmaui .fighead,
+  #dbigisland .fighead{
+    width: 35%;
+    float: left;
+  }
+  #doahu .view,
+  #dkauai .view,
+  #dmaui .view,
+  #dbigisland .view{
+    padding: .5em;
+    width: 33%;
+    margin: 0 auto;
+}
+  header .logo img{
+    width: 35%;
+    float: left;
+
+}
+  #dhike main section,
+  #dcouple main section,
+  #dhotel main section,
+  #dcruise main section,
+  #dsight main section,
+  #dtour main section,
+  #dflight main section{
+    width: 25%;
+  }
 }
